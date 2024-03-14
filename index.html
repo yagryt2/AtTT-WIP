@@ -54,7 +54,7 @@
         ">
           <div class="container">
             <img class="item-1" src="dropDownMenu2.png" style="height: 48px; padding: 16px 0px 0px 16px;">
-            <label class="item-2" style="font-size: 300%; text-shadow: 4px 4px 4px #FF0000FF;">Аудио в Текст Транскрибатор (AtTT)</label>
+            <label class="item-2" style="color: #4696f9; font-size: 300%; font-weight: 900;">Аудио в Текст Транскрибатор (AtTT)</label>
             <img class="item-3" src="ourCodeIcon.png" style="height: 48px; padding: 16px 16px 0px 0px;">
           </div>
         </div>
@@ -76,6 +76,7 @@
                   print("Тут будет ваш транскрибированный текст")
                 </py-script>
               </label>
+              <p></p>
             </div>
           </div>
           <div class="allTxt" style="
@@ -85,7 +86,17 @@
             text-align: center;
           ">
             <div style="flex-shrink: 0;">
-              <input type="file" name="file">                                     <!--file choser-->
+
+              <div style="border: solid; border-width: 1px;">
+                <p></p>
+                <label for="upload-audio">---> Нажмите, чтобы выбрать файл <---</label>                                                                   <!--file choser-->
+                <p></p>
+              </div>
+
+              <div style="opacity: 0;">
+                <input type="file" name="file" id="upload-audio" />
+              </div>
+              <!--<input type="file" name="file" style="background-color: #0078d7;">                                     -->
             </div>
           </div>
           <div class="allTxt">
