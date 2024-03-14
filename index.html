@@ -1,0 +1,134 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style.css" />   <!--href="https://pyscript.net/alpha/pyscript.css"-->
+      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+      <style>
+        .imageOne {
+          /*background-image: url('https://avatars.mds.yandex.net/get-images-cbir/1750668/io3gWKKEOSXUxwKKqMWwvA4160/ocr');*/
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+        .allTxt {
+          color: white;
+          text-align: center;
+        }
+        .fixed {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          text-align: center;
+        }
+        #output {
+          font-size: 160%;
+          /*padding: 0px;*/
+        }
+        /*#mainButton {
+          text-align: center;
+          font-size: 300%;
+          width: 80%;
+          height: 14%;
+          background: #333333;
+          border: outset;
+          border-radius: 36px;
+          color: white;
+
+        }*/
+        /*.mainButtonClass {
+          text-align: center;
+          padding-top: 12%;
+        }*/
+        /*button.hover {
+          color: green;
+        }*/
+      </style>
+    </head>
+  <body>
+    <header class="fixed">                                                      <!--Header (that one element that fixed-->
+      <div class="allTxt">
+        <div
+        style="border-bottom: outset;
+        padding: 2%;
+        ">
+          <div class="container">
+            <img class="item-1" src="dropDownMenu2.png" style="height: 48px; padding: 16px 0px 0px 16px;">
+            <label class="item-2" style="font-size: 300%; text-shadow: 4px 4px 4px #FF0000FF;">Аудио в Текст Транскрибатор (AtTT)</label>
+            <img class="item-3" src="ourCodeIcon.png" style="height: 48px; padding: 16px 16px 0px 0px;">
+          </div>
+        </div>
+      </div>
+    </header>                                                                   <!-- ^ HEADER (Drop down menu + txt + link to code) ^ -->
+    <p style="padding: 5% ;"></p>
+    <main>
+      <form>
+        <div class="imageOne">
+          <div class="allTxt" style="
+            padding-top: 2%;
+            padding-right: 20%;
+            padding-left: 20%;
+            text-align: center;
+          ">
+            <div style="border: soled; border-width: 1px">
+              <label id="output">
+                <py-script>                                                       <!--ВЫПОЛНЕНИЕ ПИТОН КОДА (ВЫВОД ТРАНСКРИПЦИИ) -->
+                  print("Тут будет ваш транскрибированный текст")
+                </py-script>
+              </label>
+            </div>
+          </div>
+          <div class="allTxt" style="
+            padding-top: 2%;
+            padding-right: 20%;
+            padding-left: 20%;
+            text-align: center;
+          ">
+            <div style="flex-shrink: 0;">
+              <input type="file" name="file">                                     <!--file choser-->
+            </div>
+          </div>
+          <div class="allTxt">
+            <div style="flex-shrink: 0;">
+              <p style="padding: 1%;"></p>
+              <input
+                class="buttons"
+                type="submit"
+                value="Транскрибировать аудио в текст"
+              >                                                                   <!--ГЛАВНАЯ КНОПКА-->
+              <p style="padding: 2%"></p>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+    <div style="padding: 20%;"></div>
+    <footer class="allTxt" style="
+      background: #2b2b2b;
+      padding-bottom: 10px;
+    ">
+      <form style="line-height: 2px; font-size: 70%;">
+        <p style="padding: 6px;"></p>
+        <p id="footerTxt">© All Rights Reserved 2022-23,</p>
+        <p id="footerTxt">Шкель Даниил, Загалов Давид</p>
+        <a id="footerTxt" href="https://mail.google.com/" style="color: orange;">chumbayumba666@gmail.com</a>
+      </form>
+    </footer>
+  </body>
+</html>
+
+<!--background-image: url(images/background.jpg);
+
+background-repeat: no-repeat;
+
+background-position: center center;
+
+background-attachment: fixed;
+
+-webkit-background-size: cover;
+
+-moz-background-size: cover;
+
+-o-background-size: cover;
+
+background-size: cover;-->

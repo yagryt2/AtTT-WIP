@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap");
+
+header {
+    background-color: #171717;
+    font-family: "Noto Sans JP", Segoe UI, sans-serif;
+}
+body {
+    background-color: #000000FF;
+    background-image: url("footerWall.jpg");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    font-family: "Noto Sans JP", Segoe UI, sans-serif;
+}
+.buttons {
+    background-color: #000000;
+    border: solid;
+    border-width: 2px;
+    border-color: #575757;
+    color: #FFFFFF;
+    scale: 200%;
+    padding: 10px;
+    border-radius: 36px;
+}
+.icons {
+    color: #ffb900;
+}
+
+#footerTxt {
+    text-align: center;
+    font-weight: 500;
+    font-family: Trebuchet MS;
+    height: 1%;
+}
+
+#div2 {
+
+}
+
+.container {
+    display: flex;
+    /*flex-direction: row;*/
+    justify-content: space-between;
+}
+.item-2 {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
